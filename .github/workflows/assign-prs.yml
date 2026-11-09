@@ -15,8 +15,11 @@
 name: PR assignment
 
 on:
-  pull_request_target:
+  pull_request_target: # zizmor: ignore[dangerous-triggers] - needs write token on fork PRs; never checks out or runs PR code
     types: [opened, edited, reopened]
+    branches: [main]
+
+permissions: {}
 
 jobs:
   auto-assign:
@@ -26,7 +29,7 @@ jobs:
       pull-requests: write
     steps:
       - name: "Auto-assign PR"
-        uses: pozil/auto-assign-issue@v2
+        uses: pozil/auto-assign-issue@7bf9d82c77d45976224660b873fc83e60576c5aa # v2
         with:
           assignees: dolphin1999,isaurabhuttam,prernakakkar-google
           numOfAssignee: 1
