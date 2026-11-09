@@ -26,7 +26,7 @@ Gemini CLI includes a pre-built extension for connecting to any PostgreSQL datab
 1. Install the extension:
 
     ```bash
-    gemini extensions install https://github.com/gemini-cli-extensions/postgres
+    gemini extensions install https://github.com/GoogleCloudPlatform/postgres-plugin
     ```
 
 ## Configuration

@@ -30,7 +30,7 @@ body:
       description: |
         Please run through the following list and make sure you've tried the usual "quick fixes":
       options:
-        - label: "Search the [current open issues](https://github.com/gemini-cli-extensions/postgres/issues)"
+        - label: "Search the [current open issues](https://github.com/GoogleCloudPlatform/postgres-plugin/issues)"
           required: true
 
   - type: textarea
